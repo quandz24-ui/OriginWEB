@@ -1,0 +1,119 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    touch-action: none;
+
+    scrollbar-width: thin;
+    scrollbar-color: #bbb transparent;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 4px 0;
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+} /*
+Source - https://stackoverflow.com/a
+Posted by deathangel908, modified by community. See post 'Timeline' for change history
+Retrieved 2025-11-13, License - CC BY-SA 3.0
+*/
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input[type="range"] {
+        overflow: hidden;
+        width: 80px;
+        -webkit-appearance: none;
+        background-color: #fff;
+        border-radius: 50px;
+        border: solid 1px gray;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+        height: 10px;
+        -webkit-appearance: none;
+        color: #13bba4;
+        margin-top: -1px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        width: 10px;
+        -webkit-appearance: none;
+        height: 10px;
+        cursor: ew-resize;
+        background: #434343;
+        border-radius: 50px;
+        box-shadow: calc(var(--bg-widthPhone) * -1px) 0 0 calc(var(--bg-widthPhone) * 1px) #888;
+    }
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+    background-color: #888;
+}
+input[type="range"]::-moz-range-track {
+    background-color: #fff;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+    background-color: #888;
+}
+input[type="range"]::-ms-fill-upper {
+    background-color: #fff;
+}
+
+#allBtnForDebug {
+    position: absolute;
+    bottom: 0px;
+}
+#allBtnForDebug button {
+    border: none;
+    border-radius: 5px;
+    background: #3b3b3b;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    font-family: Helvetica;
+}
+
+#versionText {
+    position: absolute;
+    bottom: 9px;
+    font-size: 14px;
+    color: #bebebe;
+    font-weight: bold;
+    font-family: "noto sans", sans-serif;
+}
+
+#in4 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+#passwordIn4 {
+    font-size: 10px;
+    color: #838383;
+    font-weight: bold;
+    font-family: "noto sans", sans-serif;
+}

@@ -1,0 +1,325 @@
+:root {
+    --bg-widthPhone: 280;
+    --bg-heightPhone: 617;
+    --bg-borderRadiusPhone: calc(41px * 1);
+
+    --bg-borderRadiusSys: 25px;
+
+    --bg-borderRadiusIcon: 17px;
+    --bg-scaleIcon: 0.9;
+
+    --bg-wallpaperHome: url("/originData/wallpaper/wallpaper_2.png");
+    --bg-wallpaperLock: url("/originData/wallpaper/wallpaper_1.png");
+
+    --bg-itemBackground: #171717;
+    --bg-appbackground: #000000;
+    --bg-color: #fff;
+
+    --bg-colorForBackground: white;
+
+    --bg-speedAnimation: 1;
+
+    --bg-colorDark0System: rgb(255, 150, 160);
+    --bg-colorDark1System: rgb(255, 130, 140);
+    --bg-colorDark2System: rgb(255, 110, 120);
+    --bg-colorDark3System: rgb(255, 90, 100);
+    --bg-colorDark4System: rgb(255, 60, 80);
+    --bg-colorDark5System: rgb(255, 40, 60);
+    --bg-colorDark6System: rgb(200, 40, 60);
+
+    /* liquid opacity*/
+    --bg-liquidOpacity: 0%;
+
+    /* color of phone's border */
+    --bg-phoneColor: #bcbcbc;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+:root {
+    /*lock clock edit*/
+    --bg-lockClockTranslate: "";
+    --bg-colorLockClock: #ffffff;
+    --bg-fontLockClock: "Roboto Flex", sans-serif;
+    --bg-scaleLockContent: 1;
+    --bg-fontWeightLockClock: 500;
+    --bg-opacityLockClock: 30%;
+}
+
+.horizontalScroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: visible;
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #bbb transparent;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+}
+.horizontalScroll::after,
+.horizontalScroll::before {
+    content: "";
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.horizontalScroll .itemChild {
+    display: flex;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+.horizontalScroll .itemChild:active {
+    transition: 0.1s;
+    scale: 0.98;
+}
+
+.sortYForFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sortByX {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.positionA {
+    position: absolute;
+}
+.positionR {
+    position: relative;
+}
+.positionStatic {
+    position: static;
+}
+
+.displayF {
+    display: flex;
+}
+.displayB {
+    display: block;
+}
+.displayN {
+    display: none;
+}
+
+.scale40 {
+    scale: 0.4;
+}
+.transformScale80 {
+    transform: scale(0.8);
+}
+.transformScale60 {
+    transform: scale(0.6);
+}
+.transformOriginCenter {
+    transform-origin: center;
+}
+
+.boderSolid1pxGray {
+    border: solid 1px gray;
+}
+
+.w100 {
+    width: 100%;
+}
+.h330 {
+    height: 330px;
+}
+
+.backgroundItem {
+    background-color: var(--bg-itemBackground);
+}
+.backgroundApp {
+    background-color: var(--bg-appbackground);
+}
+.borderRadiusPhone {
+    border-radius: var(--bg-borderRadiusPhone);
+}
+
+.padding5_9 {
+    padding: 5px;
+    padding-inline: 9px;
+}
+
+.notoSans {
+    font-family: "noto sans", sans-serif;
+}
+.fontBold {
+    font-weight: bold;
+}
+
+.centerInline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerBlock {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    bottom: 0;
+}
+.top {
+    top: 0;
+}
+
+nav {
+    display: flex;
+    width: calc(100% - 30px);
+    padding: 15px;
+    justify-content: flex-end;
+}
+
+.justifyContent-end {
+    justify-content: end !important;
+}
+
+.liquid {
+    box-shadow: inset 1px 1px 9px rgba(255, 255, 255, 0.7), inset 0 0 0 rgba(255, 255, 255, 0.4);
+    border: solid 1px rgba(255, 255, 255, 0.4);
+    background: color-mix(
+        in srgb,
+        var(--bg-appbackground) calc(var(--bg-liquidOpacity) * 1.5),
+        transparent calc(100% - var(--bg-liquidOpacity) * 1.5)
+    );
+}
+.liquid:not(.noBlur) {
+    backdrop-filter: blur(5px);
+}
+.liquid.active {
+    box-shadow: inset 1px 1px 9px color-mix(in srgb, var(--bg-colorDark5System) 40%, transparent 60%),
+        inset 0 0 0 color-mix(in srgb, var(--bg-colorDark5System) 40%, transparent 60%),
+        inset 0 0 0 color-mix(in srgb, var(--bg-colorDark5System) 40%, transparent 60%);
+    border: solid 1px color-mix(in srgb, var(--bg-colorDark5System) 40%, transparent 60%);
+}
+.liquid:not(.noActiveAnim):active {
+    transition: all 0.05s, box-shadow 0.1s !important;
+    scale: 0.95;
+    box-shadow: inset 1px 1px 9px rgba(255, 255, 255, 0.4), inset 0 0 0 rgba(255, 255, 255, 0.4),
+        0 0 14px rgba(255, 255, 255, 0.7), inset 0 0 0 rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.phone.noLiquid .liquid {
+    box-shadow: none;
+    border: none;
+    background: color-mix(in srgb, var(--bg-appbackground) 70%, transparent 30%);
+}
+
+.notWork {
+    filter: brightness(0.5);
+    pointer-events: none;
+}
+.notWork > * {
+    pointer-events: none !important;
+}
+.darkMode {
+    --bg-itemBackground: #171717;
+    --bg-appbackground: #000000;
+    --bg-color: #fff;
+}
+
+.activeBorder {
+    border: solid 3px gray !important;
+}
+.activeBorder.active {
+    border: solid 3px var(--bg-colorDark3System) !important;
+}
+
+.select {
+    position: absolute;
+    right: 15px;
+    font-family: sans-serif;
+}
+
+.select .selectTrigger {
+    position: relative;
+    background: var(--bg-appbackground);
+    padding: 5px 25px 4px 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select .selectTrigger::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.select:has(.selectBoxs.open) .selectTrigger::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select .selectBoxs {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--bg-itemBackground);
+    border-radius: 12px;
+    padding: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transform-origin: top;
+    transform: scale(0.05);
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.2s ease;
+    z-index: 100;
+}
+.select.left .selectBoxs {
+    transform-origin: top right;
+    transform: scale(0.05) translate();
+}
+select.right .selectBoxs {
+    transform-origin: top left;
+}
+
+.select .selectBoxs.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+}
+
+.select .itemChild {
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+    transition: background 0.3s;
+    font-family: "noto snas", sans-serif;
+    font-size: 15px;
+}
+
+.select .itemChild.active {
+    background: var(--bg-colorDark3System);
+}
+
+.select .currentValue {
+    font-family: "noto snas", sans-serif;
+    font-size: 13px;
+    pointer-events: none;
+}
