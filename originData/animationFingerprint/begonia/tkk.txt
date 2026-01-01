@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OriginWEB</title>
+
+        <fontCss>
+            <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet" />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400&display=swap"
+                rel="stylesheet"
+            />
+            <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet" /><link
+                href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+                rel="stylesheet"
+            />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+                rel="stylesheet"
+            />
+            <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet" />
+        </fontCss>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="/css/keyFrames.css" />
+        <link rel="stylesheet" href="/css/appScreen.css" />
+        <link rel="stylesheet" href="/css/phone.css" />
+        <link rel="stylesheet" href="/css/systemToast_popupAlert.css" />
+
+        <link rel="stylesheet" href="/root.css" />
+        <link rel="stylesheet" href="/body.css" />
+    </head>
+
+    <body>
+        <div class="phone" id="frame">
+            <div id="powerBtn"></div>
+            <div class="volumeBtn notWork">
+                <div id="volumeUp"></div>
+                <div id="volumeDown"></div>
+            </div>
+            <div class="cameraBtn" data-appcamerabtn="app_camera"></div>
+            <div class="borderOut"></div>
+            <div class="borderIn"></div>
+        </div>
+
+        <div class="phone" id="phone">
+            <div class="wallpaper" id="wallpaperHome"></div>
+
+            <div id="allAppIconScreen">
+                <div id="horizontalScrollAppScreen">
+                    <div class="appScreen" id="appScreen1">
+                        <div
+                            class="iconApp"
+                            style="
+                                grid-area: 1 / 1;
+                                background: url('./originData/iconPacks/origin_icon/browser.png') no-repeat center
+                                    center/105%;
+                            "
+                            data-app="app_none0"
+                            data-noremove="1"
+                        >
+                            <label>browser</label>
+                        </div>
+                        <div
+                            class="iconApp"
+                            style="
+                                grid-area: 1 / 2;
+                                background: url('./originData/iconPacks/origin_icon/camera.png') no-repeat center
+                                    center/105%;
+                            "
+                            data-app="app_camera"
+                            data-noremove="1"
+                        >
+                            <label>camera</label>
+                        </div>
+                        <div
+                            class="iconApp"
+                            style="
+                                grid-area: 1 / 3;
+                                background: url('./originData/iconPacks/origin_icon/clock.png') no-repeat center
+                                    center/105%;
+                            "
+                            data-app="app_clock"
+                            data-noremove="1"
+                        >
+                            <label>clock</label>
+                        </div>
+                        <div
+                            class="iconApp"
+                            style="
+                                grid-area: 1 / 4;
+                                background: url('./originData/iconPacks/origin_icon/compass.png') no-repeat center
+                                    center/105%;
+                            "
+                            data-app="app_none3"
+                            data-noremove="1"
+                        >
+                            <label>compass</label>
+                        </div>
+                        <div
+                            class="iconApp"
+                            style="
+                                grid-area: 2 / 1;
+                                background: url('./originData/iconPacks/origin_icon/calendar.png') no-repeat center
+                                    center/105%;
+                            "
+                            data-app="app_none4"
+                            data-noremove="1"
+                        >
+                            <label>calendar</label>
+                        </div>
+                        <div
+                            class="iconApp"
+                            style="
+                                grid-area: 2 / 2;
+                                background: url('./originData/iconPacks/origin_icon/phone.png') no-repeat center
+                                    center/105%;
+                            "
+                            data-app="app_dialer"
+                            data-noremove="1"
+                        >
+                            <label>dialer</label>
+                        </div>
+                        <div
+                            class="iconApp"
+                            style="
+                                grid-area: 2 / 3;
+                                background: url('./originData/iconPacks/origin_icon/gallery.png') no-repeat center
+                                    center/105%;
+                            "
+                            data-app="app_none6"
+                            data-noremove="1"
+                        >
+                            <label>gallery</label>
+                        </div>
+                        <div
+                            class="iconApp"
+                            style="
+                                grid-area: 2 / 4;
+                                background: url('./originData/iconPacks/other_icon/magisk.png') no-repeat center
+                                    center/105%;
+                            "
+                            data-app="app_magiskRoot"
+                            data-noremove="1"
+                        >
+                            <label>magisk</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 3 / 1" data-app="app_none8">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 3 / 2" data-app="app_none9">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 3 / 3" data-app="app_none10">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 3 / 4" data-app="app_none11">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 4 / 1" data-app="app_none12">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 4 / 2" data-app="app_none13">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 4 / 3" data-app="app_none14">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 4 / 4" data-app="app_none15">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 5 / 1" data-app="app_none16">
+                            <label>none</label>
+                        </div>
+                    </div>
+
+                    <div class="appScreen" id="appScreen2">
+                        <div class="iconApp" style="grid-area: 1 / 1" data-app="app_none17">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 1 / 2" data-app="app_none18">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 1 / 3" data-app="app_none19">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 1 / 4" data-app="app_none20">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 2 / 1" data-app="app_none21">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 2 / 2" data-app="app_none22">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 2 / 3" data-app="app_none23">
+                            <label>none</label>
+                        </div>
+                        <div class="iconApp" style="grid-area: 2 / 4" data-app="app_none24">
+                            <label>none</label>
+                        </div>
+                    </div>
+
+                    <!--More app screen-->
+                </div>
+
+                <div id="favApp" class="liquid noActiveAnim">
+                    <div id="pager" class="liquid"></div>
+                    <!--Favorite app-->
+
+                    <div
+                        class="iconApp"
+                        style="
+                            grid-area: 1 / 1;
+                            background: url('./originData/iconPacks/origin_icon/calculator.png') no-repeat center
+                                center/105%;
+                        "
+                        data-app="app_calculator"
+                        data-noremove="1"
+                    >
+                        <label>calculator</label>
+                    </div>
+                    <div
+                        class="iconApp"
+                        style="
+                            grid-area: 1 / 2;
+                            background: url('./originData/iconPacks/origin_icon/files.png') no-repeat center center/105%;
+                        "
+                        data-app="app_files"
+                        data-noremove="1"
+                    >
+                        <label>my files</label>
+                    </div>
+                    <div
+                        class="iconApp"
+                        style="
+                            grid-area: 1 / 3;
+                            background: url('./originData/iconPacks/origin_icon/music.png') no-repeat center center/105%;
+                        "
+                        data-app="app_music"
+                        data-noremove="1"
+                    >
+                        <label>music</label>
+                    </div>
+                    <div
+                        class="iconApp"
+                        style="
+                            grid-area: 1 / 4;
+                            background: url('./originData/iconPacks/origin_icon/settings.png') no-repeat center
+                                center/105%;
+                        "
+                        data-app="app_settings"
+                        data-noremove="1"
+                    >
+                        <label>settings</label>
+                    </div>
+                </div>
+
+                <div id="blurAllApp"></div>
+
+                <div class="app" id="app_calculator">
+                    <div class="appDisplay"></div>
+                </div>
+                <div class="app" id="app_files">
+                    <div class="appDisplay"></div>
+                </div>
+                <div class="app" id="app_music">
+                    <div class="appDisplay"></div>
+                </div>
+                <div class="app" id="app_settings">
+                    <link rel="stylesheet" href="/appData/app_settings/css/main.css" />
+                    <script src="appData/app_settings/js/main.js"></script>
+                    <div class="appDisplay">
+                        <div class="scrollYSettings" id="viewportScrollYSettingsMain">
+                            <div class="scrollContent before50px" id="contentScrollYSettingsMain">
+                                <div id="topTextSettings">Settings</div>
+
+                                <div class="settingsItem brTop brBottom" data-openAppId="app_SettingsAppAbout">
+                                    <div class="settingsIcon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path
+                                                d="M291 6q-57 0-96.5-39.5T155-130v-700q0-57.4 39.3-96.7Q233.6-966 291-966h377q57 0 96.5 39.5T804-830v91q20.1 12.05 31.05 32.03Q846-687 846-664v74q0 23-10.95 43.47Q824.1-526.05 804-514v384q0 57-39.5 96.5T668 6H291Zm144-316h90v-224h-90v224Zm45-254q18.45 0 31.23-12.89Q524-589.77 524-608.39q0-18.61-12.77-31.11Q498.45-652 480-652q-18.45 0-31.23 12.68-12.77 12.69-12.77 31Q436-590 448.77-577q12.78 13 31.23 13Z"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="sortByY">
+                                        <div class="settingsText">About</div>
+                                        <div class="settingsTextSmall">
+                                            OS information &#x2022; phone name &#x2022; website version
+                                        </div>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                    </svg>
+                                </div>
+
+                                <div class="settingsItem brTop" data-openAppId="app_SettingsAppAnimation">
+                                    <div class="settingsIcon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path
+                                                d="M504 2q-57.12 0-96.56-39.44Q368-76.88 368-134v-323q0-55.72 39.44-95.86T504-593h322q57.13 0 96.56 40.14Q962-512.72 962-457v323q0 57.12-39.44 96.56Q883.13 2 826 2H504ZM183-216v-426q0-55.72 39.44-95.86T319-778h425v136H319v426H183ZM-2-386v-441q0-55.72 39.44-95.36T134-962h440v135H134v441H-2Z"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="settingsText">Animation</div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                    </svg>
+                                </div>
+                                <div class="settingsItem" data-openAppId="app_SettingsAppSound">
+                                    <div class="settingsIcon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path
+                                                d="M580-86v-109q97-28 157.5-107T798-481q0-100-61-179T580-767v-109q142 29 232.5 139.5T903-481q0 144-90.5 255.5T580-86ZM57-318v-324h185l258-258v840L242-318H57Zm523 15v-355q53 26 86 73t33 105q0 58-33 105t-86 72Z"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="settingsText">Sounds & Haptic tap</div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                    </svg>
+                                </div>
+                                <div class="settingsItem" data-openAppId="app_SettingsAppDisplayAndBrightness">
+                                    <div class="settingsIcon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path
+                                                d="M412-787v-172h136v172H412Zm0 786v-172h136V-1H412Zm375-411v-136h172v136H787ZM1-412v-136h172v136H1Zm757-250-96-97 107-108 97 97-108 108ZM191-93l-97-97 108-108 96 97L191-93Zm578 0L662-201l96-97 108 108-97 97ZM201-662 94-769l97-97 107 107-97 97Zm279 434q-105 0-178.5-73.5T228-480q0-105 73.5-178.5T480-732q105 0 178.5 73.5T732-480q0 105-73.5 178.5T480-228Z"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="settingsText">Display & brightness</div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                    </svg>
+                                </div>
+                                <div class="settingsItem brBottom" data-openAppId="app_SettingsAppTheme" id="temp44">
+                                    <div class="settingsIcon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path
+                                                d="M212-76q-57.12 0-96.56-39.44Q76-154.88 76-212v-536q0-57.13 39.44-96.56Q154.88-884 212-884h536q57.13 0 96.56 39.44Q884-805.13 884-748v536q0 57.12-39.44 96.56Q805.13-76 748-76H212Zm4-186h528L571-502 450-341l-91-121-143 200Z"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="settingsText">Home screen, lock screen & wallpaper</div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                    </svg>
+                                </div>
+
+                                <div
+                                    class="settingsItem brTop brBottom"
+                                    data-openAppId="app_SettingsAppSystemManagement"
+                                >
+                                    <div class="settingsIcon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path
+                                                d="M480-400-4-664l484-263 484 263-484 264Zm0 183L20-469l120-79 340 187 341-187 120 79-461 252Zm0 183L20-285l120-79 340 186 341-186 120 79L480-34Z"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="settingsText">System management & upgrade</div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                        <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="appInApp" id="app_SettingsAppAbout">
+                            <div class="backBtnForAppInApp">About</div>
+                            <link rel="stylesheet" href="/appData/app_settings/css/about.css" />
+
+                            <div class="scrollYSettings" style="width: calc(100% - 10px)">
+                                <div class="scrollContent">
+                                    <div
+                                        class="settingsItem"
+                                        id="imageOceanWebpOriginOSLogoAbout"
+                                        data-openappid="app_SettingsAppAboutOcean"
+                                    ></div>
+                                    <div
+                                        id="rightBigTextNameDeviceInAbout"
+                                        onclick='
+                      showPopupInput({
+                        message: "Enter your product name",
+                        placeholder: document.getElementById("rightBigTextNameDeviceInAbout").textContent.trim(),
+                        defaultText: document.getElementById("rightBigTextNameDeviceInAbout").textContent.trim(),
+                        maxLength: 20,
+                        buttonText: "Rename",
+                        onSubmit: (resultText) => {
+                          document.getElementById("rightBigTextNameDeviceInAbout").textContent = resultText;
+                          localStorage.setItem("rightBigTextNameDeviceInAbout", resultText);
+                        },
+                      });'
+                                    ></div>
+                                    <div class="divider1"></div>
+
+                                    <div
+                                        class="aboutI4Item"
+                                        id="khaysetting1-1"
+                                        onclick='
+                      showPopupInput({
+                        message: "Enter your device name",
+                        placeholder: document.getElementById("phoneName").textContent.trim(),
+                        defaultText: document.getElementById("phoneName").textContent.trim(),
+                        maxLength: 30,
+                        buttonText: "Rename",
+                        onSubmit: (resultText) => {
+                          document.getElementById("phoneName").textContent = resultText;
+                          localStorage.setItem("phoneName", resultText);
+                        },
+                      });'
+                                    >
+                                        <div class="icon_element_red"></div>
+                                        <div>
+                                            <div class="aboutI4ItemTextSmall">
+                                                Device name
+                                                <div class="icon_element_cheos"></div>
+                                            </div>
+                                            <div class="aboutI4ItemText" id="phoneName">Click to rename</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="aboutI4Item" id="khaysetting1-1">
+                                        <div class="icon_element_red"></div>
+                                        <div>
+                                            <div class="aboutI4ItemTextSmall">Version</div>
+                                            <div class="aboutI4ItemText" id="Vesion">V2.0.00</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="aboutI4Item" id="khaysetting1-2">
+                                        <div class="icon_element_red"></div>
+                                        <div>
+                                            <div class="aboutI4ItemTextSmall" id="Develop">Developer</div>
+                                            <div class="aboutI4ItemText" id="name_dev">TikTok: @sungsamtech</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="aboutI4Item">
+                                        <div class="icon_element_red"></div>
+                                        <div>
+                                            <div class="aboutI4ItemTextSmall">used</div>
+                                            <div class="aboutI4ItemText" id="storageUsed">-- MB</div>
+                                        </div>
+
+                                        <div class="icon_element_red"></div>
+                                        <div>
+                                            <div class="aboutI4ItemTextSmall">Browser storage</div>
+                                            <div class="aboutI4ItemText" id="storage">-- MB</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="aboutI4Item">
+                                        <div class="icon_element_red"></div>
+                                        <div>
+                                            <div class="aboutI4ItemTextSmall">CPU</div>
+                                            <div class="aboutI4ItemText" id="CPUCore">Can't get</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider1"></div>
+                                    <div
+                                        class="settingsItem aboutI4Item justifyContent-end"
+                                        data-openAppId="app_SettingsAppAboutMoreInfo"
+                                    >
+                                        <div>
+                                            <div class="aboutI4ItemText">More info</div>
+                                            <div class="aboutI4ItemTextSmall">Browser, GPU, etc.</div>
+                                        </div>
+                                        <div class="icon_element_cheos"></div>
+                                    </div>
+                                    <div class="divider1"></div>
+                                    <div
+                                        class="settingsItem aboutI4Item justifyContent-end"
+                                        onclick='
+                    showPopup2_alert(
+      `Found some bugs or want to join our group chat?`,
+      `join`,
+      `No`,
+      () => { window.open("https://t.me/OriginWEBChat", "_blank");},
+      () =>{})'
+                                    >
+                                        <div>
+                                            <div class="aboutI4ItemText">Join my group</div>
+                                            <div class="aboutI4ItemTextSmall">Report bug and more</div>
+                                        </div>
+                                        <div class="icon_element_cheos"></div>
+                                    </div>
+
+                                    <div class="powered-logo">
+                                        <div class="powered">Powered by</div>
+                                        <div class="brand">
+                                            <div class="html-text">HTML</div>
+                                            <img src="/originData/HTML5.png" alt="HTML5 Logo" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appInApp" id="app_SettingsAppAboutOcean">
+                                <div class="backBtnForAppInApp">About this version</div>
+                                <div id="OriginOSocean"></div>
+                            </div>
+
+                            <div class="appInApp" id="app_SettingsAppAboutMoreInfo">
+                                <div class="backBtnForAppInApp">More info</div>
+
+                                <div class="scrollYSettings">
+                                    <div class="scrollContent">
+                                        <div class="settingsItem brTop">
+                                            <div class="settingsText">GPU</div>
+                                            <div class="aboutI4ItemTextSmall" id="GPU">Unknow</div>
+                                        </div>
+
+                                        <div class="settingsItem">
+                                            <div class="settingsText">Browser</div>
+                                            <div class="aboutI4ItemTextSmall" id="nameBrowser">Unknow</div>
+                                        </div>
+
+                                        <div
+                                            class="settingsItem brBottom"
+                                            onclick='
+                    showPopup2_alert(
+      `Do you want to open this link?`,
+      `Yes`,
+      `No`,
+      () => { window.open("https://github.com/quandz24-ui/OriginOS_web", "_blank");},
+      () =>{})'
+                                        >
+                                            <div class="settingsText">source code</div>
+                                            <div class="aboutI4ItemTextSmall">
+                                                Click here to get the open source code
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appInApp" id="app_SettingsAppAboutOcean">
+                                <div class="backBtnForAppInApp">More info</div>
+                            </div>
+                        </div>
+
+                        <div class="appInApp" id="app_SettingsAppSound">
+                            <div class="backBtnForAppInApp">Sound and haptic tap</div>
+                            <div class="scrollYSettings">
+                                <div class="scrollContent"></div>
+                            </div>
+                        </div>
+
+                        <div class="appInApp" id="app_SettingsAppAnimation">
+                            <div class="backBtnForAppInApp">Animation</div>
+                            <div class="scrollYSettings">
+                                <div class="scrollContent">
+                                    <div class="settingsItem brTop">
+                                        <div class="sortByY">
+                                            <div class="settingsText marginLeft">Blur</div>
+                                            <div class="settingsTextSmall magrinL5">
+                                                Enabling this option may reduce performance.
+                                            </div>
+                                        </div>
+                                        <div class="toggleBtn active" id="toggle_turnBlurOff"></div>
+                                    </div>
+
+                                    <div class="settingsItem brBottom noActiveAnim">
+                                        <div class="settingsText marginLeft">Unlock animation</div>
+
+                                        <div class="select left" name="unlockAnimation">
+                                            <div class="selectTrigger">
+                                                <span class="currentValue">ColorOS</span>
+                                            </div>
+
+                                            <div class="selectBoxs">
+                                                <div class="itemChild active" data-value="OriginOS">OriginOS</div>
+                                                <div class="itemChild" data-value="ColorOS">ColorOS</div>
+                                                <div class="itemChild" data-value="HyperOS">HyperOS</div>
+                                                <div class="itemChild" data-value="HarmonyOS">HarmonyOS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="appInApp" id="app_SettingsAppTheme">
+                            <link rel="stylesheet" href="/appData/app_settings/css/themes.css" />
+                            <div class="backBtnForAppInApp">Home screen, lock screen & wallpaper</div>
+
+                            <div class="scrollYSettings">
+                                <div class="scrollContent">
+                                    <div class="grid2x3" id="gridAllThemes">
+                                        <div
+                                            class="itemChild wallpaperForGrid2x3 settingsItem"
+                                            data-openAppId="app_SettingsAppWallpaper"
+                                        >
+                                            <a>Wallpaper</a>
+                                        </div>
+                                        <div class="itemChild settingsItem" data-openappid="app_SettingsAppAOD">
+                                            <a>AOD</a>
+                                        </div>
+                                        <div
+                                            class="itemChild settingsItem"
+                                            style="background: var(--bg-wallpaperLock) no-repeat center center/cover"
+                                            data-openappid="app_SettingsAppLockEditor"
+                                        >
+                                            <a>Lock screen</a>
+                                        </div>
+                                        <div class="itemChild settingsItem" data-openappid="app_SettingsAppPhoneColor">
+                                            <a>phone color</a>
+                                        </div>
+                                        <div class="itemChild settingsItem" data-openappid="app_SettingsAppIcon">
+                                            <div class="containerPreIcon">
+                                                <div class="icon app_settings"></div>
+                                                <div class="icon app_files"></div>
+                                                <div class="icon app_music"></div>
+                                                <div class="icon app_calculator"></div>
+                                            </div>
+                                            <a>Icon</a>
+                                        </div>
+                                    </div>
+                                    <div class="space"></div>
+                                    <div class="settingsItem brTop">
+                                        <div class="settingsText magrinL5">system style</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="settingsItem">
+                                        <div class="settingsText magrinL5">dynamic effects</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="settingsItem brBottom" data-openAppId="app_SettingsAppHomeLockSettings">
+                                        <div class="settingsText magrinL5">home screen and lock screen settings</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--app of appThem-->
+                            <div class="appInApp" id="app_SettingsAppAOD">
+                                <div class="backBtnForAppInApp">Always on display</div>
+                                <div class="scrollYSettings">
+                                    <div class="scrollContent">
+                                        <div class="settingsItem brTop brBottom noActiveAnim">
+                                            <div class="sortByY">
+                                                <div class="sortByX">
+                                                    <div class="settingsText marginLeft">Always on display</div>
+                                                    <div class="toggleBtn active" id="toggle_turnAodOff"></div>
+                                                </div>
+
+                                                <div class="space"></div>
+                                                <div class="contentName magrinL5">Always on display style</div>
+
+                                                <div class="horizontalScroll">
+                                                    <div
+                                                        class="itemChild activeBorder padding5_9 notoSans"
+                                                        data-style="0"
+                                                    >
+                                                        Style 1
+                                                    </div>
+                                                    <div
+                                                        class="itemChild activeBorder padding5_9 notoSans"
+                                                        data-style="1"
+                                                    >
+                                                        Style 2
+                                                    </div>
+                                                    <div
+                                                        class="itemChild activeBorder padding5_9 notoSans"
+                                                        data-style="2"
+                                                    >
+                                                        Style 3
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appInApp" id="app_SettingsAppHomeLockSettings">
+                                <div class="backBtnForAppInApp">home screen and lock screen settings</div>
+                                <div class="scrollYSettings">
+                                    <div class="scrollContent">
+                                        <div class="contentName">Lock screen</div>
+                                        <div class="settingsItem brTop brBottom">
+                                            <div class="settingsText marginLeft">Double tap to turn on/off screen</div>
+                                            <div class="toggleBtn active" id="toggle_doubleTapOnOff"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appInApp" id="app_SettingsAppWallpaper">
+                                <div class="backBtnForAppInApp">Wallpaper</div>
+                                <div class="scrollYSettings">
+                                    <div class="scrollContent">
+                                        <div class="settingsItem brTop brBottom sortYForFlex noActiveAnim">
+                                            <h4>OriginOS</h4>
+                                            <div class="horizontalScroll">
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/wallpaper_1.png');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/wallpaper_2.png');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/wallpaper_3.png');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/wallpaper_4.png');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/wallpaper_5.png');
+                                                    "
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <div class="settingsItem brTop brBottom sortYForFlex noActiveAnim">
+                                            <h4>ColorOS</h4>
+                                            <div class="horizontalScroll">
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/coloros15/wallpaper_1.jpg');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/coloros15/wallpaper_2.jpg');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/coloros15/wallpaper_3.jpg');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/coloros15/wallpaper_4.jpg');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/coloros15/wallpaper_5.jpg');
+                                                    "
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <div class="settingsItem brTop brBottom sortYForFlex noActiveAnim">
+                                            <h4>ColorOS (flowers)</h4>
+                                            <div class="horizontalScroll">
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/coloros15/wallpaper_6.jpg');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/coloros15/wallpaper_7.jpg');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/coloros15/wallpaper_8.jpg');
+                                                    "
+                                                ></div>
+                                                <div
+                                                    class="itemChild phonePreview small"
+                                                    style="
+                                                        background-image: url('/originData/wallpaper/coloros15/wallpaper_9.jpg');
+                                                    "
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="overlayFullScreen">
+                                    <div id="optionSelectWallpaper" class="liquid noActiveAnim">
+                                        <h4>Select options for wallpapers</h4>
+                                        <button data-buttonWallpaper="setForLockScreen" class="liquid noBLur">
+                                            set for lock screen
+                                        </button>
+                                        <button data-buttonWallpaper="setForHomeScreen" class="liquid noBLur">
+                                            set for home screen
+                                        </button>
+                                        <button data-buttonWallpaper="setForBothScreen" class="liquid noBLur">
+                                            set for both screen
+                                        </button>
+                                        <button data-buttonWallpaper="cancelSetWallpaper" class="liquid noBLur">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="appInApp darkMode"
+                                id="app_SettingsAppPhoneColor"
+                                style="background-color: #101010"
+                            >
+                                <div class="backBtnForAppInApp">phone color</div>
+                                <iframe width="300" height="300" src="" frameborder="0" allowfullscreen></iframe>
+
+                                <div class="horizontalScroll notoSans">
+                                    <div
+                                        class="itemChild padding5_9 liquid"
+                                        data-colorphone="#535353"
+                                        data-iframe="https://embed.studio.binkies3d.com/live3d/6947a249748435005994aae7"
+                                    >
+                                        phantom black
+                                    </div>
+                                    <div
+                                        class="itemChild padding5_9 liquid"
+                                        data-colorphone="#EAE5D0"
+                                        data-iframe="https://embed.studio.binkies3d.com/live3d/6947a0c6748435005994aa88"
+                                    >
+                                        dune brown
+                                    </div>
+                                    <div
+                                        class="itemChild padding5_9 liquid"
+                                        data-colorphone="rgb(175, 205, 219)"
+                                        data-iframe="https://embed.studio.binkies3d.com/live3d/6947a614748435005994abf7"
+                                    >
+                                        mist blue
+                                    </div>
+                                    <div
+                                        class="itemChild padding5_9 liquid active"
+                                        data-colorphone="rgb(221, 221, 221)"
+                                        data-iframe="https://embed.studio.binkies3d.com/live3d/6947a68fa8379b005839aed0"
+                                    >
+                                        cloud white
+                                    </div>
+                                </div>
+                                <div class="settingsItem brTop brBottom">
+                                    <div class="sortByY">
+                                        <div class="settingsText marginLeft">Phone shadow</div>
+                                        <div class="settingsTextSmall magrinL5">
+                                            Enabling this option may reduce performance.
+                                        </div>
+                                    </div>
+                                    <div class="toggleBtn" id="togglePhoneShadow"></div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="appInApp lockClockEditor active"
+                                id="app_SettingsAppLockEditor"
+                                style="background-color: #101010"
+                            >
+                                <div class="backBtnForAppInApp">Lock screen</div>
+                                <div
+                                    class="phonePreview transformScale80 transformOriginCenter positionA boderSolid1pxGray lockEditor-phonePre"
+                                >
+                                    <div class="wallpaper">
+                                        <div class="imageForWallpaperLock preview"></div>
+                                    </div>
+                                    <div
+                                        class="lockContent preview"
+                                        data-classToAdd="lockClockEditor active"
+                                        data-idNeedAdd="app_SettingsAppLockEditor"
+                                    >
+                                        <div class="dateMain dateText"></div>
+                                        <div class="clockMain lockClock"></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w100 h330 positionA backgroundItem bottom borderRadiusPhone lockEditor-controls lockClockEditor boderSolid1pxGray"
+                                >
+                                    <nav>
+                                        <div
+                                            class="closeBtn"
+                                            data-classToRemove="lockClockEditor active"
+                                            data-idNeedRemove="app_SettingsAppLockEditor"
+                                        ></div>
+                                    </nav>
+
+                                    <div class="horizontalScroll">
+                                        <div class="colorCircle" id="colorMediumWallpaperButton"></div>
+                                        <div class="space"></div>
+                                        <div class="colorCircle" style="background-color: #d43a3a"></div>
+                                        <div class="colorCircle" style="background-color: #d48c3a"></div>
+                                        <div class="colorCircle" style="background-color: #d4bd3a"></div>
+                                        <div class="colorCircle" style="background-color: #a6d43a"></div>
+                                        <div class="colorCircle" style="background-color: #3ad461"></div>
+                                        <div class="colorCircle" style="background-color: #3ad4a6"></div>
+                                        <div class="colorCircle" style="background-color: #3aa8d4"></div>
+                                        <div class="colorCircle" style="background-color: #3a56d4"></div>
+                                        <div class="colorCircle" style="background-color: #703ad4"></div>
+                                        <div class="colorCircle" style="background-color: #963ad4"></div>
+                                        <div class="colorCircle" style="background-color: #b03ad4"></div>
+                                        <div
+                                            class="colorCircle"
+                                            style="background-color: #101010; border: solid 1px white"
+                                        ></div>
+                                        <div
+                                            class="colorCircle"
+                                            style="background-color: #fafafa; border: solid 1px #000"
+                                        ></div>
+                                    </div>
+                                    <div class="space"></div>
+                                    <div class="horizontalScroll">
+                                        <div class="fontCircle" style="font-family: 'Roboto Flex', sans-serif">12</div>
+                                        <div class="fontCircle" style="font-family: 'Gloock', serif">12</div>
+                                        <div class="fontCircle" style="font-family: 'noto sans', sans-serif">12</div>
+                                        <div class="fontCircle" style="font-family: 'Leckerli One', cursive">12</div>
+                                        <div class="fontCircle" style="font-family: 'Fredoka', sans-serif">12</div>
+                                    </div>
+
+                                    <div class="slider-container">
+                                        <label for="scaleLockClockSlider">Scale:</label>
+                                        <div class="sortByX">
+                                            <input
+                                                type="range"
+                                                id="scaleLockClockSlider"
+                                                min="0.6"
+                                                max="1.4"
+                                                step="0.05"
+                                                value="1"
+                                            />
+                                            <span id="scaleLockClockValue">1</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-container">
+                                        <label for="fontClockWeightSlider">font weight:</label>
+                                        <div class="sortByX">
+                                            <input
+                                                type="range"
+                                                id="fontClockWeightSlider"
+                                                min="300"
+                                                max="800"
+                                                step="0.05"
+                                                value="500"
+                                            />
+                                            <span id="fontClockWeightValue">500</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-container">
+                                        <label for="opacityLockClockSlider">transparent:</label>
+                                        <div class="sortByX">
+                                            <input
+                                                type="range"
+                                                id="opacityLockClockSlider"
+                                                min="0"
+                                                max="80"
+                                                step="0.05"
+                                                value="30"
+                                            />
+                                            <span id="opacityLockClockValue">30%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appInApp" id="app_SettingsAppIcon">
+                                <div class="backBtnForAppInApp">Icon</div>
+                                <div class="scrollYSettings">
+                                    <div class="scrollContent">
+                                        <div class="settingsItem brTop brBottom">
+                                            <div class="settingsText marginLeft">Don't show icon text</div>
+                                            <div class="toggleBtn" id="toggle_hideIconText"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--end of appTheme-->
+                        </div>
+
+                        <div class="appInApp" id="app_SettingsAppDisplayAndBrightness">
+                            <div class="backBtnForAppInApp">Display & brightness</div>
+                            <div class="scrollYSettings">
+                                <div class="scrollContent">
+                                    <div class="settingsItem brTop">
+                                        <div class="sortByY">
+                                            <div class="settingsText marginLeft">Brightness</div>
+                                            <input
+                                                class="inputInSettings"
+                                                type="range"
+                                                max="100"
+                                                min="20"
+                                                value="100"
+                                                step="1"
+                                                id="inputRangeBrightness"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="settingsItem">
+                                        <div class="settingsText marginLeft">Dark mode</div>
+                                        <div class="toggleBtn active" id="toggleDarkMode"></div>
+                                    </div>
+
+                                    <div class="settingsItem brBottom">
+                                        <div class="settingsText marginLeft">Fullscreen mode</div>
+                                        <div class="toggleBtn" id="toggleFullScreenMode"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="appInApp" id="app_SettingsAppSystemManagement">
+                            <div class="backBtnForAppInApp">System management & upgrade</div>
+                            <div class="scrollYSettings">
+                                <div class="scrollContent">
+                                    <div class="settingsItem brTop" data-openAppId="app_SettingsAppActionBtn">
+                                        <div class="settingsText magrinL5">Action button</div>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="settingsItem" data-openAppId="app_SettingsAppLiquidGlass">
+                                        <div class="settingsText magrinL5">Liquid glass</div>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                        </svg>
+                                    </div>
+
+                                    <div
+                                        class="settingsItem brBottom"
+                                        data-openAppId="app_SettingsAppPasswordAndSecurity"
+                                    >
+                                        <div class="settingsText magrinL5">Password and security</div>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                            <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appInApp" data-requestpassword="1" id="app_SettingsAppPasswordAndSecurity">
+                                <div class="backBtnForAppInApp">Password and security</div>
+                                <div class="scrollYSettings">
+                                    <div class="scrollContent">
+                                        <div class="settingsItem brTop brBottom" for="toggle_lockScreenPassword">
+                                            <div class="settingsText marginLeft">Fingerprint</div>
+                                            <div class="toggleBtn" id="toggle_fingerprint"></div>
+                                        </div>
+
+                                        <div class="contentName magrinL5">coming soon</div>
+                                        <div class="settingsItem brTop notWork">
+                                            <div class="settingsText marginLeft">lock screen password</div>
+                                            <div class="toggleBtn" id="toggle_lockScreenPassword"></div>
+                                        </div>
+                                        <div class="settingsItem brBottom notWork" for="toggle_lockScreenPassword">
+                                            <div class="settingsText marginLeft">Change password</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                                <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appInApp" id="app_SettingsAppActionBtn">
+                                <link rel="stylesheet" href="/appData/app_settings/css/app_SettingsAppActionBtn.css" />
+                                <div class="backBtnForAppInApp">Action button</div>
+                                <div class="box">
+                                    <div class="borderPhonePre">
+                                        <div class="buttonPreview">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                                <path
+                                                    d="M479.65-258q76.24 0 128.3-51.67Q660-361.33 660-437.2q0-76.03-52.17-128.41Q555.66-618 479.75-618q-76.58 0-128.17 52.33Q300-513.34 300-437.2q0 76.03 51.65 127.62 51.64 51.58 128 51.58Zm.1-90q-38.42 0-64.08-25.62Q390-399.24 390-437.46q0-38.87 25.72-65.04 25.71-26.17 64.16-26.17 37.79 0 64.29 25.83 26.5 25.83 26.5 65 0 38.51-26.19 64.17Q518.29-348 479.75-348ZM156.67-90.67q-43.83 0-74.92-31.08-31.08-31.09-31.08-74.92v-482q0-43.85 31.08-75.26 31.09-31.4 74.92-31.4H272L357-870h246.67l85.66 84.67h114q43.86 0 75.27 31.4 31.4 31.41 31.4 75.26v482q0 43.83-31.4 74.92-31.41 31.08-75.27 31.08H156.67Z"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div class="screen"></div>
+                                    </div>
+                                </div>
+
+                                <div class="horizontalScroll notoSans">
+                                    <div
+                                        class="itemChild padding5_9 liquid"
+                                        data-appForCameraBtn="app_camera"
+                                        data-path="M479.65-258q76.24 0 128.3-51.67Q660-361.33 660-437.2q0-76.03-52.17-128.41Q555.66-618 479.75-618q-76.58 0-128.17 52.33Q300-513.34 300-437.2q0 76.03 51.65 127.62 51.64 51.58 128 51.58Zm.1-90q-38.42 0-64.08-25.62Q390-399.24 390-437.46q0-38.87 25.72-65.04 25.71-26.17 64.16-26.17 37.79 0 64.29 25.83 26.5 25.83 26.5 65 0 38.51-26.19 64.17Q518.29-348 479.75-348ZM156.67-90.67q-43.83 0-74.92-31.08-31.08-31.09-31.08-74.92v-482q0-43.85 31.08-75.26 31.09-31.4 74.92-31.4H272L357-870h246.67l85.66 84.67h114q43.86 0 75.27 31.4 31.4 31.41 31.4 75.26v482q0 43.83-31.4 74.92-31.41 31.08-75.27 31.08H156.67Z"
+                                    >
+                                        camera
+                                    </div>
+                                    <div
+                                        class="itemChild padding5_9 liquid"
+                                        data-appForCameraBtn="app_calculator"
+                                        data-path="M320.67-236.33h54V-322h85.66v-54h-85.66v-85.67h-54V-376H235v54h85.67v85.67Zm200.66-33.34H723V-324H521.33v54.33Zm0-105H723v-54H521.33v54Zm-273-226h198.34v-54H248.33v54Zm-51.66 510q-43.83 0-74.92-31.08-31.08-31.09-31.08-74.92v-566.66q0-44.1 31.08-75.39Q152.84-870 196.67-870h566.66q44.1 0 75.39 31.28Q870-807.43 870-763.33v566.66q0 43.83-31.28 74.92-31.29 31.08-75.39 31.08H196.67ZM561-524l58.83-59.33L680-524l38-38.67L658.33-623 718-682.67l-38-38L620.33-661 561-720.67l-39 38L581.67-623 522-562.67 561-524Z"
+                                    >
+                                        calculator
+                                    </div>
+                                    <div
+                                        class="itemChild padding5_9 liquid"
+                                        data-appForCameraBtn="app_dialer"
+                                        data-path="M161.67-90.67q-29.34 0-50-20.33Q91-131.33 91-161.67v-152q0-31.33 17-51.66 17-20.34 48.33-29.67L262-419.33q26-6 47.5.33t39.17 24.67l102 100q30.33-17 60.66-40.34Q541.67-358 573-390.33q28.67-28.67 53.83-58.84Q652-479.33 671-511.67l-104-94q-17-14-22.5-35.5T542-690l27-114q6.67-32 27.83-49Q618-870 651-870h148.33q30.34 0 50.5 20.67 20.17 20.66 20.17 51 0 124.66-58.5 252.66T646.67-312.33Q541-207 414.5-148.83 288-90.67 161.67-90.67Z"
+                                    >
+                                        dialer
+                                    </div>
+                                    <div
+                                        class="itemChild padding5_9 liquid"
+                                        data-appForCameraBtn=""
+                                        data-path="M479.92-50.67q-88.56 0-167.23-33.35-78.68-33.35-137-92.17-58.32-58.82-91.67-137.54Q50.67-392.44 50.67-482q0-86.61 33.86-165.96 33.86-79.35 91.43-137.49 57.57-58.14 136.94-91.34Q392.27-910 479.95-910q87.69 0 167.08 33.21 79.39 33.2 136.98 91.34 57.58 58.14 91.79 137.49Q910-568.61 910-482q0 89.56-33.69 168.27-33.68 78.72-92 137.54-58.32 58.82-137.08 92.17-78.76 33.35-167.31 33.35Zm.08-106q52.34 0 101-15 48.67-15 89-47.66l-452.67-451q-30 40.66-45.33 88.94-15.33 48.28-15.33 99.39 0 136.25 94.04 230.79 94.04 94.54 229.29 94.54ZM743-293q27-40.67 43.67-88.83 16.66-48.16 16.66-100.17 0-133.72-94.04-227.53-94.04-93.8-229.29-93.8-51.78 0-99.22 14.66Q333.33-774 292-744.33L743-293ZM480-482Z"
+                                    >
+                                        none
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appInApp" id="app_SettingsAppLiquidGlass">
+                                <link
+                                    rel="stylesheet"
+                                    href="/appData/app_settings/css/app_SettingsAppLiquidGlass.css"
+                                />
+                                <div class="backBtnForAppInApp">Liquid glass</div>
+                                <div class="scrollYSettings">
+                                    <div class="scrollContent">
+                                        <div class="settingsItem brTop">
+                                            <div class="settingsText marginLeft">Liquid glass</div>
+                                            <div class="toggleBtn active" id="toggle_turnLiquidOff"></div>
+                                        </div>
+
+                                        <div
+                                            class="settingsItem brBottom noActiveAnim"
+                                            notWorkBy="toggle_turnLiquidOff"
+                                        >
+                                            <div class="sortByY">
+                                                <div class="settingsText marginLeft">Opacity</div>
+                                                <input
+                                                    type="range"
+                                                    max="30"
+                                                    min="0"
+                                                    value="0"
+                                                    step="0.1"
+                                                    id="inputRangeLiquidOpacity"
+                                                />
+                                                <div class="centerInline">
+                                                    <div
+                                                        class="liquidPreview notoSans fontBold padding5_9"
+                                                        style="
+                                                            background: url('/originData/wallpaper/wallpaper_1.png')
+                                                                no-repeat center center/cover;
+                                                            border-radius: 0;
+                                                            height: 100px;
+                                                            width: 130px;
+                                                        "
+                                                    >
+                                                        <div
+                                                            class="liquidPreview liquid notoSans fontBold padding5_9 positionA"
+                                                            style="scale: 1"
+                                                            onclick='addNotification("./originData/iconPacks/origin_icon/settings.png", "OriginWEB", "Preview", "app_settings")'
+                                                        >
+                                                            Click
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end of appDisplay-->
+                    </div>
+                </div>
+                <div class="app" id="app_none0">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_camera">
+                    <div
+                        class="appDisplay"
+                        style="
+                            background: url('/appData/app_camera/Screenshot_20211026_124308-465x1024.jpg') no-repeat
+                                100% center / contain #000;
+                            background-position: center;
+                        "
+                    ></div>
+                </div>
+                <div class="app" id="app_clock">
+                    <div class="appDisplay"></div>
+                </div>
+                <div class="app" id="app_none3">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none4">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_dialer">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none6">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_magiskRoot">
+                    <div class="appDisplay">
+                        <div
+                            style="
+                                position: absolute;
+                                top: 20%;
+                                width: calc(100% - 40px);
+                                max-width: 700px;
+                                font-family: monospace;
+                                background: var(--bg-itemBackground);
+                                border-radius: 12px;
+                                padding: 10px;
+                                color: var(--bg-color);
+                            "
+                        >
+                            <div style="display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 8px">
+                                <button
+                                    onclick="runCmd()"
+                                    style="
+                                        padding: 6px 14px;
+                                        background: #00ff88;
+                                        border: none;
+                                        border-radius: 6px;
+                                        font-weight: bold;
+                                        cursor: pointer;
+                                        color: #000;
+                                    "
+                                >
+                                    Run
+                                </button>
+
+                                <label
+                                    style="
+                                        padding: 6px 14px;
+                                        background: var(--bg-appbackground);
+                                        color: rgb(0, 196, 0);
+                                        border-radius: 6px;
+                                        cursor: pointer;
+                                        user-select: none;
+                                    "
+                                >
+                                    Import .js file
+                                    <input type="file" accept=".js" hidden onchange="runCmdFromFile(this.files[0])" />
+                                </label>
+                            </div>
+
+                            <input
+                                id="cmdInput"
+                                type="text"
+                                placeholder="Type JavaScript"
+                                style="
+                                    width: calc(100% - 25px);
+                                    border: none;
+                                    padding: 10px 12px;
+                                    font-size: 14px;
+                                    border-radius: 6px;
+                                    background: var(--bg-appbackground);
+                                    color: currentColor;
+                                    outline: none;
+                                "
+                                onkeydown="if(event.key==='Enter') runCmd()"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="app" id="app_none8">
+                    <div class="appDisplay">
+                        <iframe src="https://quandz24-ui.github.io/OriginOS_web/" width="100%" height="100%"></iframe>
+                    </div>
+                </div>
+                <div class="app" id="app_none9">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none10">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none11">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none12">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none13">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none14">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none15">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none16">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none17">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none18">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none19">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none20">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none21">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none22">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none23">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+                <div class="app" id="app_none24">
+                    <div class="appDisplay">
+                        <div class="centerText">none</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nav"></div>
+
+            <!--on top element-->
+            <div id="lockScreen">
+                <!--lock screen ==> -->
+                <div class="wallpaper" id="wallpaperLock"><div id="imageForWallpaperLock"></div></div>
+
+                <div id="scaleForOff">
+                    <link rel="stylesheet" href="/css/lockScreen.css" />
+
+                    <div class="lockContent" id="lockContent">
+                        <div>
+                            <div class="dateMain dateText">thứ bảy, 6 tháng 9</div>
+                            <div class="clockMain lockClock">10:00</div>
+                        </div>
+                    </div>
+
+                    <!--<button class="notifBtn liquid">1 notification</button>-->
+                    <div class="stackWrapper">
+                        <div class="stackContainer"></div>
+                    </div>
+
+                    <div class="bottomBtn">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path
+                                    d="M194-755v-171h572v171H194Zm285.94 415q22.06 0 37.56-15.44 15.5-15.44 15.5-37.5Q533-415 517.56-431q-15.44-16-37.5-16-22.06 0-37.56 16.12-15.5 16.12-15.5 38.17 0 22.06 15.44 37.39Q457.88-340 479.94-340ZM275-34v-461l-81-120v-50h572v50l-81 120v461H275Z"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path
+                                    d="M479.53-250q79.03 0 134.75-55.25T670-439.53q0-79.03-55.72-134.75T479.53-630q-79.03 0-134.28 55.72T290-439.53q0 79.03 55.25 134.28T479.53-250Zm.22-116Q448-366 427-387.05t-21-52.5q0-31.45 21.05-52.95 21.05-21.5 52.5-21.5t52.95 21.25q21.5 21.26 21.5 53Q554-408 532.75-387q-21.26 21-53 21ZM170-74q-57.12 0-96.56-39.44Q34-152.88 34-210v-460q0-57.13 39.44-96.56Q112.88-806 170-806h94l91-80h250l91 80h94q57.13 0 96.56 39.44Q926-727.13 926-670v460q0 57.12-39.44 96.56Q847.13-74 790-74H170Z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="overlayTurnOff"></div>
+
+                <div class="fingerBtn displayN" id="fingerBtn"></div>
+            </div>
+            <!-- <== lock screen-->
+
+            <div class="lpControlCenterControlsCenter">
+                <link rel="stylesheet" href="/css/controlsCenter.css" />
+
+                <div class="control-centerControlsCenter" id="controlCenterID0ControlsCenter">
+                    <div
+                        class="itemControlsCenter wifiControlsCenter activeControlsCenter"
+                        id="controlCenterID2ControlsCenter"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M479.89-61.28q-42.89 0-72.27-29.5-29.38-29.49-29.38-72.14 0-42.88 29.49-72.26 29.5-29.39 72.38-29.39 42.89 0 72.27 29.5 29.38 29.49 29.38 72.38 0 42.65-29.49 72.03-29.5 29.38-72.38 29.38ZM255.5-297.39 142.78-410.11q64.05-64.28 150.73-103.3Q380.2-552.43 480-552.43q99.8 0 186.49 38.9 86.68 38.9 150.73 103.18L704.5-297.39q-44.55-43.98-101.36-68.68-56.81-24.69-123.14-24.69t-123.14 24.69q-56.81 24.7-101.36 68.68ZM36.11-516.02-76.85-628.98Q29.76-735.59 171.53-798.03 313.3-860.48 480-860.48q166.7 0 308.47 62.83 141.77 62.82 248.38 169.43L923.89-515.26q-85.56-84.61-198.76-134.2-113.2-49.58-245.13-49.58t-245.13 49.2q-113.2 49.21-198.76 133.82Z"
+                            />
+                        </svg>
+                        <div class="bottom_textControlsCenter">@sungsamtech</div>
+                    </div>
+                    <div
+                        class="itemControlsCenter musicControlsCenter"
+                        id="controlCenterID1ControlsCenter"
+                        data-nonclick="1"
+                        onclick="openAppByID('app_music'); closeControlsCenter()"
+                    >
+                        <div id="box_musicControlsCenter">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-music-icon lucide-music"
+                                style="fill: none"
+                            >
+                                <path d="M9 18V5l12-2v13" />
+                                <circle cx="6" cy="18" r="3" />
+                                <circle cx="18" cy="16" r="3" />
+                            </svg>
+
+                            <div id="img_musicControlsCenter"></div>
+                        </div>
+                        <div id="decor_musicControlsCenter">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 78 78"
+                                style="fill: rgba(23, 23, 23, 0.2)"
+                            >
+                                <path
+                                    d="M 8 15 A 1 1 0 0 1 8 0 L 53 0 Q 78 0 78 25 L 78 70 A 1 1 0 0 1 63 70 L 63 25 Q 63 15 53 15 Z"
+                                />
+                            </svg>
+                        </div>
+                        <div id="music_textControlsCenter">Not playing</div>
+                        <div class="controls_music3">
+                            <div onclick="event.stopPropagation(); prevTrack_music()">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="30px"
+                                    viewBox="0 -960 960 960"
+                                    width="30px"
+                                    fill="#fff"
+                                >
+                                    <path
+                                        d="M184.39-204.39v-551.22h106v551.22h-106Zm591.22 0L361.91-480l413.7-275.61v551.22Z"
+                                    />
+                                </svg>
+                            </div>
+                            <div onclick="event.stopPropagation(); togglePlay_music()" id="playPauseIcon_music3">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="30px"
+                                    viewBox="0 -960 960 960"
+                                    width="30px"
+                                    fill="#fff"
+                                >
+                                    <path d="M300.78-165.52v-628.96L795.61-480 300.78-165.52Z" />
+                                </svg>
+                            </div>
+                            <div onclick="event.stopPropagation(); nextTrack_music()">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="30px"
+                                    viewBox="0 -960 960 960"
+                                    width="30px"
+                                    fill="#fff"
+                                >
+                                    <path
+                                        d="M669.61-204.39v-551.22h106v551.22h-106Zm-485.22 0v-551.22L598.09-480l-413.7 275.61Z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemControlsCenter" id="controlCenterID4ControlsCenter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M24.65-124.65v-368.94h153.18v368.94H24.65Zm252.76 0v-475.94h153.18v475.94H277.41Zm252 0v-582.7h153.18v582.7H529.41Zm252.76 0v-710.7h153.18v710.7H782.17Z"
+                            />
+                        </svg>
+                        <div class="bottom_textControlsCenter">Data</div>
+                    </div>
+                    <div class="itemControlsCenter" id="controlCenterID3ControlsCenter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M255.41-44.65v-131.46l127-87.76v-122.35L44.65-252.46v-154.17l337.76-234.52v-176.61q0-40.44 28.58-69.01 28.58-28.58 69.01-28.58 40.43 0 69.51 28.58 29.08 28.57 29.08 69.01v176.61l336.76 234.52v154.17L578.59-386.22v122.35l126.52 87.76v131.46L480-111.61 255.41-44.65Z"
+                            />
+                        </svg>
+                        <div class="bottom_textControlsCenter">Airplane</div>
+                    </div>
+                    <div
+                        class="itemControlsCenter connectControlsCenter"
+                        id="controlCenterID7ControlsCenter"
+                        data-nonclick="1"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M344.07-84.41q-47.87 0-80.53-32.66-32.65-32.65-32.65-80.52v-564.58q0-47.87 32.65-80.53 32.66-32.65 80.53-32.65h272.1q47.87 0 80.53 32.65 32.65 32.66 32.65 80.53v564.58q0 47.87-32.65 80.52-32.66 32.66-80.53 32.66h-272.1Zm135.17-531.76q22 0 37.5-15.5t15.5-37.5q0-22.24-15.5-37.62-15.5-15.38-37.5-15.38-22.24 0-37.62 15.38-15.38 15.38-15.38 37.62 0 22 15.38 37.5t37.62 15.5ZM-61.11-348.15v-263.7h106v263.7h-106Zm146 81.76v-427.22h106v427.22h-106Zm830.46-81.76v-263.7h106v263.7h-106Zm-146 81.76v-427.22h106v427.22h-106Z"
+                            />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M136.5-190.11v-113.17h78.89V-556.5q0-40.39 10.96-78.78 10.95-38.39 34.63-70.55L251.5-556.5h10.28L17.28-801.76l74-73.76L872.78-92.5l-74 74-175.13-171.61H136.5Zm609.87-149.35L319.04-768.78q19.76-14.81 40.93-24.95 21.16-10.14 44.2-16.42V-838q0-31.67 22.08-53.75T480-913.83q32.43 0 54.89 22.08T557.35-838v27.85q84.87 23.52 136.94 94.15 52.08 70.63 52.08 159.5v217.04ZM481-47.07q-38.48 0-65.34-26.85-26.86-26.86-26.86-65.1h184.4q0 38.24-26.86 65.1Q519.48-47.07 481-47.07Z"
+                            />
+                        </svg>
+                    </div>
+                    <div
+                        class="itemControlsCenter sliderControlsCenter volumeControlsCenter"
+                        id="controlCenterID6ControlsCenter"
+                        data-nonclick="1"
+                    >
+                        <div class="slider-innerControlsCenter volumeControlsCenter">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -960 960 960"
+                                style="margin-bottom: 20px"
+                            >
+                                <path
+                                    d="M552.61-63.93v-108.24q106.89-26.48 173.86-113.09 66.96-86.61 66.96-196.5 0-109.13-67.46-194.98-67.47-85.85-173.36-112.33V-897.3q151.89 26.71 249.24 144.06 97.35 117.35 97.35 271.48 0 154.65-97.35 273T552.61-63.93ZM60.8-334.74v-290.52h176.63l235.18-236.7v763.92l-235.18-236.7H60.8Zm491.81 27.94v-346.63q51.48 23.71 82.57 70.33 31.1 46.62 31.1 103.1t-31.1 103.1q-31.09 46.62-82.57 70.1Z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="itemControlsCenter sliderControlsCenter brightnessControlsCenter"
+                        id="controlCenterID5ControlsCenter"
+                        data-nonclick="1"
+                    >
+                        <div class="slider-innerControlsCenter">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -960 960 960"
+                                style="margin-bottom: 20px"
+                            >
+                                <path
+                                    d="M480-268.91q-88.04 0-149.57-61.52-61.52-61.53-61.52-149.57 0-88.04 61.52-149.57 61.53-61.52 149.57-61.52 88.04 0 149.57 61.52 61.52 61.53 61.52 149.57 0 88.04-61.52 149.57-61.53 61.52-149.57 61.52Zm-263.41-154.5H23.41v-113.18h193.18v113.18Zm720 0H743.41v-113.18h193.18v113.18Zm-513.18-320v-193.18h113.18v193.18H423.41Zm0 720v-193.18h113.18v193.18H423.41ZM256.52-625.74 131.98-747.28 211-829.02l120.26 122.54-74.74 80.74Zm492.48 494L629.5-252.76l74.5-80.26 124.02 120.3L749-131.74Zm-122.78-571.5 121.06-124.78L829.02-749 706.48-628.74l-80.26-74.5ZM131.74-211.76 252.76-330.5l80.26 74.5-120.3 124.02-80.98-79.78Z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="itemControlsCenter focusControlsCenter"
+                        id="controlCenterID8ControlsCenter"
+                        data-nonclick="1"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M44.65-151.3v-273.63q0-33.2 11-57.16 11-23.95 29-44.13v-122.55q0-61.97 45.08-106.16 45.07-44.2 106.75-44.2h151.67q23.28 0 47.29 8.14 24.01 8.14 44.56 22.19 20.55-14.05 44.56-22.19t47.29-8.14h151.67q61.68 0 106.75 44.2 45.08 44.19 45.08 106.16v122.55q18 20.18 29 44.13 11 23.96 11 57.16v273.63H802.17v-81.77H157.83v81.77H44.65Zm487.2-415.77h230.32v-81.49q0-16.12-11.43-26.76-11.44-10.64-27.22-10.64H568.98q-15.78 0-26.46 10.66-10.67 10.65-10.67 26.39v81.84Zm-334.02 0h230.32v-81.49q0-16.12-10.67-26.76-10.68-10.64-26.46-10.64H236.48q-15.78 0-27.22 10.66-11.43 10.65-11.43 26.39v81.84Zm-40 220.83h644.34v-80q0-15.8-10.67-27.23-10.68-11.42-26.46-11.42H195.25q-16.07 0-26.75 11.43-10.67 11.44-10.67 27.22v80Zm644.34 0H157.83h644.34Z"
+                            />
+                        </svg>
+                        Focus
+                    </div>
+                    <div class="itemControlsCenter" id="controlCenterID12ControlsCenter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M427.76-55.96v-296.52L252.48-178.72l-73.76-73.76L406-480 178.72-707.52l73.76-73.76 175.28 173.76v-296.52h53l248.52 248.52L554-480l175.28 175.52L480.76-55.96h-53Zm106-551.56 47.76-48-47.76-44v92Zm0 347.04 47.76-44-47.76-48v92Z"
+                            />
+                        </svg>
+                        <div class="bottom_textControlsCenter">Bluetooth</div>
+                    </div>
+                    <div class="itemControlsCenter" id="controlCenterID11ControlsCenter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M158.52-204.65q-67.68 0-114.9-47.21-47.21-47.22-47.21-114.9v-226.72q0-67.68 47.21-114.78 47.22-47.09 114.9-47.09h501.7q67.44 0 114.65 47.09 47.22 47.1 47.22 114.78v226.72q0 67.68-47.22 114.9-47.21 47.21-114.65 47.21h-501.7Zm1-113.18h499.46q21.04 0 35.48-14.45 14.45-14.44 14.45-35.48v-224.72q0-21.04-14.45-35.36-14.44-14.33-35.48-14.33H159.52q-21.04 0-35.48 14.33-14.45 14.32-14.45 35.36v224.72q0 21.04 14.45 35.48 14.44 14.45 35.48 14.45Zm702.57-42.74V-600.2H907q23.67 0 40.13 16.46t16.46 40.13v126.46q0 23.43-16.46 40.01-16.46 16.57-40.13 16.57h-44.91Zm-712.5 11.31v-252.91h415.04v252.91H149.59Z"
+                            />
+                        </svg>
+                        <div class="bottom_textControlsCenter">Battery save</div>
+                    </div>
+                    <div class="itemControlsCenter" id="controlCenterID10ControlsCenter">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#000000"
+                        >
+                            <path
+                                d="M479.91-469.04q37.57 0 64.31-26.65 26.74-26.65 26.74-64.22t-26.65-64.31q-26.65-26.74-64.22-26.74t-64.31 26.65q-26.74 26.65-26.74 64.22t26.65 64.31q26.65 26.74 64.22 26.74ZM480-43.65Q298.8-193.37 211.73-316.63q-87.08-123.26-87.08-238.85 0-152.52 104.5-256.69Q333.64-916.35 480-916.35t250.85 104.18Q835.35-708 835.35-555.48q0 115.59-87.08 238.85Q661.2-193.37 480-43.65Z"
+                            />
+                        </svg>
+                        <div class="bottom_textControlsCenter">Location</div>
+                    </div>
+                    <div
+                        class="itemControlsCenter"
+                        id="controlCenterID9ControlsCenter"
+                        onclick="powerBtnEvent()"
+                        data-nonclick="1"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M239.35-35.04q-47.63 0-80.4-32.78-32.78-32.77-32.78-80.4v-401.06q0-47.96 32.78-80.57 32.77-32.61 80.4-32.61h13.13v-73.06q0-96 66.57-163t160.95-67q94.38 0 160.95 67t66.57 163v73.06h13.13q47.63 0 80.4 32.61 32.78 32.61 32.78 80.57v401.06q0 47.63-32.78 80.4-32.77 32.78-80.4 32.78h-481.3Zm240.81-219.98q38.12 0 64.91-27.06 26.78-27.07 26.78-65.07 0-38-26.94-64.9-26.95-26.91-65.07-26.91-38.12 0-64.91 27.03-26.78 27.03-26.78 64.98 0 38.05 26.94 64.99 26.95 26.94 65.07 26.94ZM365.65-662.46h228.7v-73.06q0-48.21-33.35-82.52-33.34-34.31-81.12-34.31-47.77 0-81 34.31t-33.23 82.52v73.06Z"
+                            />
+                        </svg>
+                        <div class="bottom_textControlsCenter">Lock</div>
+                    </div>
+                    <div
+                        class="itemControlsCenter"
+                        id="controlCenterID15ControlsCenter"
+                        onclick="document.getElementById('toggleLowBlueLight').classList.toggle('active')"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M172-172v-296h136v160h160v136H172Zm480-320v-160H492v-136h296v296H652Z" />
+                        </svg>
+                        <div class="bottom_textControlsCenter">Fullscreen</div>
+                    </div>
+                    <div
+                        class="itemControlsCenter"
+                        id="controlCenterID14ControlsCenter"
+                        data-nonclick="1"
+                        onclick="openAppByID('app_clock'); closeControlsCenter()"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Z"
+                            />
+                        </svg>
+                        <div class="bottom_textControlsCenter">Timer</div>
+                    </div>
+                    <div class="itemControlsCenter" id="controlCenterID13ControlsCenter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M206.17-772.5v-142.85h547.66v142.85H206.17Zm273.91 444.67q28.77 0 48.83-20.14 20.07-20.14 20.07-48.91 0-28.77-20.14-48.96-20.14-20.18-48.92-20.18-28.77 0-48.83 20.3-20.07 20.3-20.07 49.08 0 28.77 20.14 48.79t48.92 20.02ZM287.93-44.65v-464.81l-81.76-121.52v-39.35h547.66v39.35l-81.76 121.52v464.81H287.93Z"
+                            />
+                        </svg>
+                        <div class="bottom_textControlsCenter">Flash</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="statusBar">
+                <link rel="stylesheet" href="/css/statusBar.css" />
+
+                <div class="left">
+                    <div class="itemStatus" id="itemStatusLeft">
+                        <div class="clockMain" id="statusClock">10:00</div>
+                        <div id="networkName">No SIM</div>
+                    </div>
+                </div>
+
+                <div class="right" id="statusBarRight">
+                    <div class="itemStatus" id="itemStatusRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -990 990 990" id="status_sim">
+                            <path
+                                style="display: none"
+                                d="M 14 -114 v -250 q 88 0 176 0 v 250 H 14 Z m 252 0 v -410 h 176 v 410 H 266 Z m 252 0 v -570 h 176 v 570 H 518 Z m 252 0 v -730 h 176 v 730 H 770 Z"
+                            />
+                            <path
+                                d="M250-34q-55.73 0-95.86-39.44Q114-112.88 114-170v-489l267-267h329q55.72 0 95.86 39.44Q846-847.13 846-790v620q0 57.12-40.14 96.56Q765.72-34 710-34H250Zm230.5-220q24.88 0 41.19-16.4T538-312.09q0-25.29-16.37-41.6Q505.25-370 480-370q-24.37 0-41.19 16.4Q422-337.2 422-311.91q0 25.28 16.81 41.6Q455.63-254 480.5-254ZM427-429h106v-228H427v228Z"
+                            />
+                        </svg>
+                        <div id="networkName2">No SIM</div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-45 -827 1040 733">
+                            <path
+                                d="M 479.89 -94 Q 437 -94 408 -123.11 q -29 -29.12 -29 -71 Q 379 -237 408.11 -266 q 29.12 -29 72 -29 Q 523 -295 552 -265.89 q 29 29.12 29 72 Q 581 -152 551.89 -123 q -29.12 29 -72 29 Z M 273 -305 A 1 1 0 0 1 158 -420 q 61 -62 143.5 -99.5 T 480 -557 q 96 0 178.5 37 T 802 -421 A 1 1 0 0 1 687 -305 q -44.55 -40.94 -95.28 -62.97 Q 541 -390 480 -390 t -111.73 22.03 Q 317.55 -345.94 273 -305 Z M 81 -497 A 1 1 0 0 1 -35 -613 q 99 -99 230.5 -156.5 T 480 -827 q 153 0 284.5 57.5 T 995 -613 A 1 1 0 0 1 879 -497 q -81 -77 -180.5 -120.5 T 480 -661 q -119 0 -218.5 43.5 T 81 -497 Z"
+                            />
+                        </svg>
+
+                        <div class="status-battery" id="battery">
+                            <div class="batterySmall"></div>
+                            <div class="containerBattery">
+                                <div class="batteryLevel"></div>
+                            </div>
+                            <div class="batteryNum">100</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <== id="statusBar"-->
+
+            <div class="passwordScreen" id="passwordScreen">
+                <link rel="stylesheet" href="/css/passwordScreen.css" />
+                <div class="textScreen" id="textScreen_pw"></div>
+                <div class="dots" id="displayPasswordScreen">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="keypad" id="keypad">
+                    <button data-key="1">1</button>
+                    <button data-key="2">2</button>
+                    <button data-key="3">3</button>
+                    <button data-key="4">4</button>
+                    <button data-key="5">5</button>
+                    <button data-key="6">6</button>
+                    <button data-key="7">7</button>
+                    <button data-key="8">8</button>
+                    <button data-key="9">9</button>
+                    <button data-key="clear">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="m488-326 75-74 74 74 80-80-75-74 75-74-80-80-74 74-75-74-79 80 74 74-74 74 79 80ZM372-114q-32 0-61-14.5T262-169L34-480l228-311q20-26 49-40.5t61-14.5h418q57 0 96.5 39.5T926-710v460q0 57-39.5 96.5T790-114H372Z"
+                            />
+                        </svg>
+                    </button>
+                    <button data-key="0">0</button>
+                    <button data-key="enter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M382-200 113-469l97-97 172 173 369-369 97 96-466 466Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="fingerBtn displayN" id="fingerBtn2" style="pointer-events: all"></div>
+                <script src="/otherJS/password.js"></script>
+            </div>
+
+            <div class="notificationStacked"></div>
+
+            <div
+                class="fingerBtn ani_fingerprint displayN"
+                id="ani_fingerprint"
+                style="z-index: 1001; pointer-events: none"
+            >
+                <script src="/otherJS/animationFingerprint.js"></script>
+            </div>
+            <div id="systemToast" class="system-toast liquid"></div>
+            <island data-main="main" data-small="small">
+                <div class="island main">
+                    <div class="image"></div>
+                    <div class="text"></div>
+
+                    <div class="buttons clock">
+                        <button style="background-color: gray" class="btn1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path
+                                    d="m254-159-94-95 225-226-225-226 94-96 226 226 226-226 94 96-225 226 225 226-94 95-226-226-226 226Z"
+                                />
+                            </svg>
+                        </button>
+                        <button style="background-color: orange" class="btn2" data-btn="pause">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path class="resume" d="M685-124 124-480l561-356v712Z" />
+                                <path class="pause" d="M198-198v-564h564v564H198Z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="buttons music">
+                        <button class="btn1"></button>
+                        <button class="btn2"></button>
+                        <button class="btn3"></button>
+                    </div>
+                </div>
+                <div class="island small">
+                    <div class="image"></div>
+                    <div class="text" style="display: none"></div>
+                </div>
+                <script src="/otherJS/island.js"></script>
+                <script></script>
+
+                <div class="camera"></div>
+            </island>
+
+            <!--<div class="ai">
+                <div class="ai-box"></div>
+                <link rel="stylesheet" href="/css/AI.css" />
+            </div>-->
+        </div>
+
+        <div id="in4">
+            <div id="passwordIn4"></div>
+        </div>
+        <div id="versionText">OriginWEB v2.0.00 BETA 1</div>
+
+        <div id="allBtnForDebug" class="displayN">
+            <button
+                onclick="removeScript(`/appData/${currentOpeningElApp.id}/js/open/open.js`);
+                 runScript(`/appData/${currentOpeningElApp.id}/js/close/close.js`);"
+            >
+                close app script
+            </button>
+            <button
+                onclick='document.getElementById("horizontalScrollAppScreen").scrollBy({ left: 10, behavior: "smooth" });updateCurrentAppScreen();'
+            >
+                test scroll
+            </button>
+            <button
+                onclick="if(currentOpeningElApp && currentOpeningElApp.id == 'app_music')openAppByID('app_settings'); else openAppByID('app_music')"
+            >
+                openTest
+            </button>
+            <button onclick="closeApp()">close app</button>
+            <button onclick="addApps(`none`, `app_none`, `gray`, 1)">create app</button>
+            <button
+                onclick='addNotification("./originData/iconPacks/origin_icon/settings.png", "hi", "welcome to OriginWEB", "app_settings")'
+            >
+                create notification
+            </button>
+            <button onclick="localStorage.clear();window.location.reload();" style="color: red">clear all data</button>
+        </div>
+        <script src="/otherJS/scrollBounceAnim.js"></script>
+        <script src="/otherJS/runSriptViaFunction.js"></script>
+        <script src="/otherJS/classListAdd.js"></script>
+        <script src="/otherJS/controlsCenter.js"></script>
+
+        <script src="loading.js"></script>
+
+        <script src="appScreen.js"></script>
+        <script src="animation.js"></script>
+
+        <link rel="stylesheet" href="/css/notif.css" />
+        <script src="/otherJS/notif.js"></script>
+        <script src="./animationLockUnlock/lock.js"></script>
+
+        <!--other js-->
+        <script src="/otherJS/timeAndDate.js"></script>
+        <script src="/otherJS/systemToast_popupAlert.js"></script>
+        <script src="/otherJS/colorFunction.js"></script>
+
+        <script src="otherJS/editFunction.js"></script>
+
+        <script src="/otherJS/addIframe.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+        <script type="module" src="/otherJS/animateLib.js"></script>
+    </body>
+</html>
