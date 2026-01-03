@@ -554,7 +554,7 @@
       `Do you want to open this link?`,
       `Yes`,
       `No`,
-      () => { window.open("https://github.com/quandz24-ui/OriginOS_web", "_blank");},
+      () => { window.open("https://github.com/quandz24-ui/OriginWEB", "_blank");},
       () =>{})'
                                         >
                                             <div class="settingsText">source code</div>
@@ -1139,7 +1139,19 @@
                                             <div class="settingsText marginLeft">Fingerprint</div>
                                             <div class="toggleBtn" id="toggle_fingerprint"></div>
                                         </div>
-                                        <div class="settingsItem brBottom noActiveAnim">
+
+                                        <div class="contentName magrinL5">coming soon</div>
+                                        <div class="settingsItem brTop notWork">
+                                            <div class="settingsText marginLeft">lock screen password</div>
+                                            <div class="toggleBtn" id="toggle_lockScreenPassword"></div>
+                                        </div>
+                                        <div class="settingsItem brBottom notWork" for="toggle_lockScreenPassword">
+                                            <div class="settingsText marginLeft">Change password</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                                <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                                            </svg>
+                                        </div>
+                                        <div class="settingsItem brBottom noActiveAnim notWork">
                                             <div class="settingsText marginLeft">Fingerprint animation</div>
 
                                             <div class="select left" name="fingerprintAnimation">
@@ -1153,18 +1165,7 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="contentName magrinL5">coming soon</div>
-                                        <div class="settingsItem brTop notWork">
-                                            <div class="settingsText marginLeft">lock screen password</div>
-                                            <div class="toggleBtn" id="toggle_lockScreenPassword"></div>
-                                        </div>
-                                        <div class="settingsItem brBottom notWork" for="toggle_lockScreenPassword">
-                                            <div class="settingsText marginLeft">Change password</div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                                                <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
-                                            </svg>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -2039,3 +2040,4 @@
         <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
     </body>
 </html>
+
