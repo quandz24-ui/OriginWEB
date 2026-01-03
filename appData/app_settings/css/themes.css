@@ -226,3 +226,14 @@
     width: 100%;
     scrollbar-color: gray transparent;
 }
+
+#app_SettingsAppLockEditor .resetBtn {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    top: 50px;
+    fill: var(--bg-color);
+    padding: 5px;
+    background: var(--bg-appbackground);
+    border-radius: 50%;
+}
